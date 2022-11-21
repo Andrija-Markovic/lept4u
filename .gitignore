@@ -26,3 +26,5 @@ hs_err_pid*
 # IntelliJ IDEA files
 .idea/*
 
+# Images that should not be shared
+src/main/resources/*
