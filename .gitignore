@@ -27,4 +27,4 @@ hs_err_pid*
 .idea/*
 
 # Images that should not be shared
-src/main/resources/*
+resources/
