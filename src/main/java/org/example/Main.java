@@ -52,28 +52,6 @@ public class Main {
       defaultPConf
     );
 
-    int skewAngle = Leptonica1.pixFindSkew(
-      pixDeSkewed,
-      defaultPAngle,
-      defaultPConf
-    );
-
-    if (skewAngle != 0) {
-      System.out.println("Skew angle is " + skewAngle);
-
-      pixDeSkewed =
-        Leptonica1.pixDeskewGeneral(
-          pixDeSkewed,
-          defaultRedSweep,
-          skewAngle + 15,
-          defaultSweepDelta,
-          defaultRedSearch,
-          defaultThresh,
-          defaultPAngle,
-          defaultPConf
-        );
-    }
-
     return LeptUtils.convertPixToImage(pixDeSkewed);
   }
 }
